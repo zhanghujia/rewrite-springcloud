@@ -7,22 +7,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-cloud-api" />
         <module name="spring-cloud-provider" />
         <module name="spring-cloud-provider-hystrix" />
         <module name="spring-cloud-config-server" />
         <module name="spring-cloud-consumer-feign" />
-        <module name="spring-cloud-hystrix-dashboard" />
         <module name="spring-cloud-feign" />
         <module name="spring-cloud-eureka-cluster" />
         <module name="spring-cloud-provider-cluster" />
         <module name="spring-cloud-zuul-gateway" />
         <module name="spring-cloud-eureka" />
+        <module name="spring-cloud-api" />
+        <module name="spring-cloud-hystrix-dashboard" />
+        <module name="spring-cloud-config-client" />
         <module name="spring-cloud-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-cloud-api" target="11" />
+      <module name="spring-cloud-config-client" target="11" />
       <module name="spring-cloud-config-server" target="11" />
       <module name="spring-cloud-consumer" target="11" />
       <module name="spring-cloud-consumer-feign" target="11" />
@@ -41,6 +43,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-cloud-api" options="-parameters" />
+      <module name="spring-cloud-config-client" options="-parameters" />
       <module name="spring-cloud-config-server" options="-parameters" />
       <module name="spring-cloud-consumer" options="-parameters" />
       <module name="spring-cloud-consumer-feign" options="-parameters" />
