@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.provider.mapper.ProductMapper">
+
+    <resultMap type="product" id="ProductMap">
+        <result property="pid" column="pid" jdbcType="INTEGER"/>
+        <result property="productName" column="product_name" jdbcType="VARCHAR"/>
+        <result property="dbSource" column="db_source" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        pid,
+           product_name,
+           db_source
+    </sql>
+
+    <insert id="addProduct" useGeneratedKeys="true" parameterType="product">
+        INSERT INTO product(product_name, db_source)
+        VALUES (#{productName}, DATABASE())
+    </insert>
+
+    <select id="queryById" resultMap="ProductMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM product
+        WHERE pid = #{pid}
+    </select>
+
+
+    <select id="queryList" resultMap="ProductMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM product
+    </select>
+
+</mapper>

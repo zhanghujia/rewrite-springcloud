@@ -1,0 +1,27 @@
+server:
+  port: 7001
+
+spring:
+  application:
+    name: spring-cloud-zuul-gateway
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka6001.com:6001/eureka/,http://eureka6002.com:6002/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true #访问路径会显示为IP地址
+
+zuul:
+  routes:
+    spring-cloud-provider:  # 路由名称 名称任意
+      path: /product/provider/** # 访问路径
+      serviceId: spring-cloud-provider # 指定服务id
+      stripPrefix: false # 代理转发时 不去掉前缀
+    spring-cloud-consumer:
+      path: /product/consumer/feign/**
+      serviceId: spring-cloud-consumer-feign
+      stripPrefix: false

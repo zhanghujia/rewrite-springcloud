@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-cloud-consumer
+server:
+  port: 80
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka6001.com:6001/eureka/,http://eureka6002.com:6002/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${server.port}

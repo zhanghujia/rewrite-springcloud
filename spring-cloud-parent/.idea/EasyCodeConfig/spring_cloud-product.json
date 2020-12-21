@@ -1,0 +1,33 @@
+{
+  "name" : "Product",
+  "preName" : "",
+  "comment" : null,
+  "templateGroupName" : "Code-Jia",
+  "fullColumn" : [ {
+    "name" : "pid",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "productName",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "dbSource",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  } ],
+  "pkColumn" : null,
+  "otherColumn" : null,
+  "savePackageName" : "entities",
+  "savePath" : "C:/Users/10696/IdeaProjects/rewrite-springcloud/spring-cloud-provider/src/main/java/entities",
+  "saveModelName" : "spring-cloud-provider"
+}

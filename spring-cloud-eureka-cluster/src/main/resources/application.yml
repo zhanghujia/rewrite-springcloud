@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-cloud-eureka-cluster
+server:
+  port: 6002
+eureka:
+  instance:
+    hostname: localhost # eureka服务端的实例名称
+  client:
+    register-with-eureka: false # 服务注册,表示不将自己注册到eureka服务中
+    fetch-registry: false # 服务发现 表示自己不从eureka服务中的获取注册信息
+    service-url:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ # eureka 客户端与服务端的交互地址
+       defaultZone: http://eureka6001.com:6001/eureka/ # eureka 客户端与服务端的交互地址
+  server:
+    enable-self-preservation: false # 禁用自我保护机制
