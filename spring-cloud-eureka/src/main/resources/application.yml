@@ -5,7 +5,7 @@ server:
   port: 6001
 eureka:
   instance:
-    hostname: localhost # eureka服务端的实例名称
+    hostname: eureka6001.com # eureka服务端的实例名称
   client:
     register-with-eureka: false # 服务注册,表示不将自己注册到eureka服务中
     fetch-registry: false # 服务发现 表示自己不从eureka服务中的获取注册信息

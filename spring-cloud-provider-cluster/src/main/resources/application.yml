@@ -7,7 +7,7 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://39.106.70.85:3306/spring_cloud_cluster?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC&allowMultiQueries=true&nullCatalogMeansCurrent=true&rewriteBatchedStatements=true
+    url: jdbc:mysql://39.106.70.85:3306/spring_cloud_cluster?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC&allowMultiQueries=true&nullCatalogMeansCurrent=true&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
     username: root
     password: 123456
     hikari:
