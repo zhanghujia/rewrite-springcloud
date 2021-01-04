@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-config-eureka" />
         <module name="spring-cloud-provider" />
         <module name="spring-cloud-provider-hystrix" />
         <module name="spring-cloud-config-server" />
@@ -17,6 +18,7 @@
         <module name="spring-cloud-zuul-gateway" />
         <module name="spring-cloud-eureka" />
         <module name="spring-cloud-api" />
+        <module name="spring-cloud-provider-config" />
         <module name="spring-cloud-hystrix-dashboard" />
         <module name="spring-cloud-config-client" />
         <module name="spring-cloud-consumer" />
@@ -25,6 +27,7 @@
     <bytecodeTargetLevel>
       <module name="spring-cloud-api" target="11" />
       <module name="spring-cloud-config-client" target="11" />
+      <module name="spring-cloud-config-eureka" target="11" />
       <module name="spring-cloud-config-server" target="11" />
       <module name="spring-cloud-consumer" target="11" />
       <module name="spring-cloud-consumer-feign" target="11" />
@@ -36,6 +39,7 @@
       <module name="spring-cloud-parent" target="11" />
       <module name="spring-cloud-provider" target="11" />
       <module name="spring-cloud-provider-cluster" target="11" />
+      <module name="spring-cloud-provider-config" target="11" />
       <module name="spring-cloud-provider-hystrix" target="11" />
       <module name="spring-cloud-zuul-gateway" target="11" />
     </bytecodeTargetLevel>
@@ -44,6 +48,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-cloud-api" options="-parameters" />
       <module name="spring-cloud-config-client" options="-parameters" />
+      <module name="spring-cloud-config-eureka" options="-parameters" />
       <module name="spring-cloud-config-server" options="-parameters" />
       <module name="spring-cloud-consumer" options="-parameters" />
       <module name="spring-cloud-consumer-feign" options="-parameters" />
@@ -55,6 +60,7 @@
       <module name="spring-cloud-parent" options="-parameters" />
       <module name="spring-cloud-provider" options="-parameters" />
       <module name="spring-cloud-provider-cluster" options="-parameters" />
+      <module name="spring-cloud-provider-config" options="-parameters" />
       <module name="spring-cloud-provider-hystrix" options="-parameters" />
       <module name="spring-cloud-zuul-gateway" options="-parameters" />
     </option>

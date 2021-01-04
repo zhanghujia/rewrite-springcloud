@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../spring-cloud-api/spring-cloud-api.iml" filepath="$PROJECT_DIR$/../spring-cloud-api/spring-cloud-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/../spring-cloud-config-client/spring-cloud-config-client.iml" filepath="$PROJECT_DIR$/../spring-cloud-config-client/spring-cloud-config-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring-cloud-config-eureka/spring-cloud-config-eureka.iml" filepath="$PROJECT_DIR$/../spring-cloud-config-eureka/spring-cloud-config-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/../spring-cloud-config-server/spring-cloud-config-server.iml" filepath="$PROJECT_DIR$/../spring-cloud-config-server/spring-cloud-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/../spring-cloud-consumer/spring-cloud-consumer.iml" filepath="$PROJECT_DIR$/../spring-cloud-consumer/spring-cloud-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/../spring-cloud-consumer-feign/spring-cloud-consumer-feign.iml" filepath="$PROJECT_DIR$/../spring-cloud-consumer-feign/spring-cloud-consumer-feign.iml" />
@@ -13,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-parent.iml" filepath="$PROJECT_DIR$/spring-cloud-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/../spring-cloud-provider/spring-cloud-provider.iml" filepath="$PROJECT_DIR$/../spring-cloud-provider/spring-cloud-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/../spring-cloud-provider-cluster/spring-cloud-provider-cluster.iml" filepath="$PROJECT_DIR$/../spring-cloud-provider-cluster/spring-cloud-provider-cluster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring-cloud-provider-config/spring-cloud-provider-config.iml" filepath="$PROJECT_DIR$/../spring-cloud-provider-config/spring-cloud-provider-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/../spring-cloud-provider-hystrix/spring-cloud-provider-hystrix.iml" filepath="$PROJECT_DIR$/../spring-cloud-provider-hystrix/spring-cloud-provider-hystrix.iml" />
       <module fileurl="file://$PROJECT_DIR$/../spring-cloud-zuul-gateway/spring-cloud-zuul-gateway.iml" filepath="$PROJECT_DIR$/../spring-cloud-zuul-gateway/spring-cloud-zuul-gateway.iml" />
     </modules>
